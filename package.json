@@ -1,0 +1,28 @@
+{
+  "name": "purple-mod-a",
+  "version": "1.0.0",
+  "description": "some checks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/purple",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wix/purple-mod-a.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wix/purple-mod-a/issues"
+  },
+  "homepage": "https://github.com/wix/purple-mod-a#readme",
+  "dependencies": {
+    "purple-engine": "^1.0.2"
+  },
+  "purple": {
+    "modules": [
+      "purple-mod-a"
+    ]
+  }
+}
