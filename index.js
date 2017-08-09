@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import RN from 'react-native';
 import LibQ from 'purple-lib-q';
+import LibR from 'purple-lib-r';
 
 var _engine;
 
 class ModuleComponent extends Component {
   render() {
     return (
-      <RN.View style={{backgroundColor: 'yellow'}}>
+      <RN.View style={{backgroundColor: 'yellow', margin: 10}}>
         <RN.Text style={{
             fontSize: 16,
             textAlign: 'center',
-            margin: 10,
             color: 'purple'
           }}>
           PurpleModA
@@ -19,10 +19,11 @@ class ModuleComponent extends Component {
         <RN.Text style={{
             fontSize: 14,
             textAlign: 'center',
-            margin: 10,
             color: 'blue'
           }}>
-          lib-q version: {LibQ.version()}
+          lib-q version: {LibQ.version()}{'\n'}
+          lib-r version: {LibR.version()}{'\n'}
+          lib-q used by lib-r: {LibR.libQVersion()}
         </RN.Text>
       </RN.View>
     );
